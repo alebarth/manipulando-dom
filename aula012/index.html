@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <div id="container"></div>
+    
+    <script>
+        // como adicionar e remover elementos do HTML com appendChild e removeChild
+       const div = document.getElementById('container');
+       const logoHTML = document.createElement('img');
+       const title = document.createElement('h1');
+
+       title.innerHTML = 'Logo do HTML 5';
+
+       logoHTML.src = './html.jpg';
+       logoHTML.width = '200';
+
+       div.appendChild(title);
+       div.appendChild(logoHTML);
+
+       div.removeChild(title);
+       
+    </script>
+    
+</body>
+</html>

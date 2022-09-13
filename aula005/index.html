@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <p name="text">
+        Lorem ipsum dolor.
+    </p>
+
+    <span>Hello World</span>
+    <span>Hello World</span>
+    <span>Hello World</span>
+
+    <script>
+        // como capturar um elemento pelo name, ou proprio nome da tag
+        const p = document.getElementsByName('text');
+        const span = document.getElementsByTagName('span');
+
+        console.log(p[0]);
+        console.log(span);
+        // alterando o segundo span com innerHTML
+        span[1].innerHTML = 'Olá mundo!';
+    </script>
+    
+</body>
+</html>

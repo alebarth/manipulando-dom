@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    // executa assim que passa o mouse em cima
+    <p onmouseover="trocarTexto()">Passe o mouse aqui!</p>
+    // executa assim que tira o mouse de cima
+    <h1 onmouseout="trocarTexto()">Passe o mouse aqui!</h1>
+    
+    <script>
+       function trocarTexto() {
+        const texto = document.querySelector('p');
+        const texto2 = document.querySelector('h1');
+
+        texto.innerHTML = 'Olá! :)';
+        texto2.innerHTML = 'Bom dia!';
+       }
+    </script>
+    
+</body>
+</html>

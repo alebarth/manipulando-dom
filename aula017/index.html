@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <form onsubmit="enviar()">
+        <label>Informe sua idade: </label><br>
+        <input 
+            type="text"
+            placeholder="18"
+            id="age"
+        >
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+        function enviar() {
+            const idade = document.getElementById('age');
+
+            if (idade.value < 18) {
+                alert('Menor de idade!');
+            } else {
+                alert('Maior de idade!');
+            }
+        };
+    </script>
+    
+</body>
+</html>

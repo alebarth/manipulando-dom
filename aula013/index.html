@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <main id="container">
+        <div id="lista-container">
+            <ul id="lista">
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ul>
+        </div>
+    </main>
+    
+    <script>
+        // como verificar os nós feitos por cada elemento (main, div, ul)
+       const main = document.getElementById('container');
+       const div = document.getElementById('lista-container');
+       const ul = document.getElementById('lista');
+       
+       console.log(main.childNodes);
+       console.log(div.childNodes);
+       console.log(ul.childNodes);
+
+       ul.childNodes[1].innerHTML = 'Olá mundo';
+       console.log(ul.childNodes[1]);
+
+       // head
+       console.log(document.documentElement.firstChild);
+       // body
+       console.log(document.documentElement.lastChild);
+
+       console.log(ul.parentNode);
+       console.log(ul.parentNode.parentNode);
+    </script>
+    
+</body>
+</html>

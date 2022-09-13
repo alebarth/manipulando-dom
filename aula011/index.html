@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <img 
+        src="./html.jpg" 
+        alt="Logo do HTML5"
+        id="logo"
+    >
+    
+    <script>
+        // como manipular os atributos de um elemento
+        const logo = document.getElementById('logo');
+        const attribute = logo.getAttribute('alt');
+
+        logo.setAttribute('width', '200');
+        logo.removeAttribute('width');
+
+        console.log(attribute);
+
+    </script>
+    
+</body>
+</html>

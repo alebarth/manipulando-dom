@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <p class="text">
+        Lorem ipsum dolor.
+    </p>
+
+    <span class="text">Olá mundo</span>
+
+    <h5 class="text">Hello World</h5>
+    
+    <script>
+        // como capturar um elemento pelo querySelector
+        // querySelector vai pegar o primeiro elemento com class 'text' que encontrar
+        // querySelectorAll vai pegar todos os elementos com class 'text'
+        const element = document.querySelector('.text');
+        const elements = document.querySelectorAll('.text');
+
+        console.log(element);
+        console.log(elements);
+        console.log(elements[1]);
+    </script>
+    
+</body>
+</html>

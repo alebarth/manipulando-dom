@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="text" class="texto">
+        Lorem ipsum dolor.
+    </p>
+    
+    <script>
+        // classList para alterar a classe que o elemento vai ter
+        const texto = document.getElementById('text');
+
+        texto.classList.add('blue');
+        //texto.classList.remove('texto');
+        //texto.classList.remove('blue');
+        //texto.classList.add('red');
+        
+        if (texto.classList.contains('blue')) {
+            alert('Elemento contém a classe blue');
+        }
+
+        console.log(texto);
+    </script>
+    
+</body>
+</html>

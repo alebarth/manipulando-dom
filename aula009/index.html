@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <p id="text" class="texto">
+        Lorem ipsum dolor.
+    </p>
+
+    <div id="container">
+
+    </div>
+    
+    <script>
+        // como estilizar com css dentro do script
+        const p = document.getElementById('text');
+        const div = document.getElementById('container');
+
+        p.style.color = '#f33';
+        p.style.fontSize = '1.5em';
+
+        div.style.width = '100px';
+        div.style.height = '100px';
+        div.style.backgroundColor = '#444';
+    </script>
+    
+</body>
+</html>
